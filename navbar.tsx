@@ -13,6 +13,7 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
+import Link from 'next/link';
 
 const pages = ['About', 'Contact', 'Terms of Use'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -119,8 +120,9 @@ function ResponsiveAppBar() {
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
-                {page}
+                <Link href={`/${page.trim().toLowerCase()}`}>{page.trim()}</Link> <br />
               </Button>
+              
             ))}
           </Box>
           <Box sx={{ flexGrow: 0 }}>
