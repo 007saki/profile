@@ -4,4 +4,3 @@
 #Things to exclude
 /node_modules
 .next
-/public
