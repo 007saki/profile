@@ -14,8 +14,9 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import Link from 'next/link';
+import sakiasi from '/public/sakiasi.jpg'
 
-const pages = ['About', 'Contact', 'Terms of Use'];
+const pages = ['Contact', 'Terms of Use', 'About'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function ResponsiveAppBar() {
@@ -93,7 +94,7 @@ function ResponsiveAppBar() {
               ))}
             </Menu>
           </Box>
-          <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
+          {/* <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} /> */}
           <Typography
             variant="h5"
             noWrap
@@ -128,7 +129,7 @@ function ResponsiveAppBar() {
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar sizes="large" alt="Remy Sharp" src="/sakiasi.jpg" />
+                <Avatar sizes="large" alt="sakiasi" src={'/sakiasi.jpg'}/>
               </IconButton>
             </Tooltip>
             <Menu
