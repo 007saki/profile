@@ -64,7 +64,7 @@ function ResponsiveAppBar() {
             <IconButton
               size="large"
               aria-label="account of current user"
-              aria-controls="menu-appbar"
+              raria-controls="menu-appbar"
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
               color="inherit"
@@ -89,7 +89,7 @@ function ResponsiveAppBar() {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography sx={{ textAlign: 'center' }}>{page}</Typography>
+                <Link href={`/${page.toLowerCase()}`}>{page}</Link> <br />
                 </MenuItem>
               ))}
             </Menu>
@@ -120,7 +120,7 @@ function ResponsiveAppBar() {
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
-                <Link href={`/${page.trim().toLowerCase()}`}>{page.trim()}</Link> <br />
+                <Link href={`/${page.trim().toLowerCase()}`}>{page.trim()}</Link>
               </Button>
               
             ))}
