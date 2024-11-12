@@ -59,11 +59,11 @@ function ResponsiveAppBar() {
           >
             PORTFOLIO
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
               aria-label="account of current user"
-              raria-controls="menu-appbar"
+              aria-controls="menu-appbar"
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
               color="inherit"
@@ -74,25 +74,22 @@ function ResponsiveAppBar() {
               id="menu-appbar"
               anchorEl={anchorElNav}
               anchorOrigin={{
-                vertical: "bottom",
-                horizontal: "left",
+                vertical: 'bottom',
+                horizontal: 'left',
               }}
               keepMounted
               transformOrigin={{
-                vertical: "top",
-                horizontal: "left",
+                vertical: 'top',
+                horizontal: 'left',
               }}
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
-              sx={{ display: { xs: "block", md: "none" } }}
+              sx={{ display: { xs: 'block', md: 'none' } }}
             >
               {pages.map((page) => (
-                <Box key={page}>
-                  <Link href={`/${page.toLowerCase()}`}>
-                    <MenuItem onClick={handleCloseNavMenu}>{page}</MenuItem>
-                  </Link>
-                  <br />
-                </Box>
+                <MenuItem key={page} onClick={handleCloseNavMenu}>
+                  <Link href={`/${page.toLowerCase()}`}>{page}</Link>
+                </MenuItem>
               ))}
             </Menu>
           </Box>
