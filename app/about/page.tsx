@@ -1,153 +1,96 @@
-import * as React from "react";
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import Typography from "@mui/material/Typography";
-import CardActionArea from "@mui/material/CardActionArea";
-import CardActions from "@mui/material/CardActions";
-import { Box } from "@mui/material";
 
-export default function About() {
+
+
+import { Container, Divider, Grid2, List, ListItem, Typography } from '@mui/material'
+import React from 'react'
+
+const About = () => {
   return (
-    <Box
-      sx={{
-        width: "100%",
-        height: "90vh",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        flexDirection: "column",
-      }}
-    >
-      <Typography gutterBottom variant="h5" component="div">
-        About
-      </Typography>
-      <Card
-        sx={{
-          maxWidth: "80%",
-          bgcolor: "black",
-          color: "white",
-          overflowY: "scroll",
-          height: "70vh",
-        }}
-      >
-        <CardActionArea>
-          <CardMedia />
-          <CardContent>
-            <Typography sx={{ fontFamily: "monospace", fontSize: "14px" }}>
-              The purpose of this website is to display my knowledge in web
-              development using Javascript. I am using a Javascript library
-              called Next JS and there are several benefits of using a web
-              application such as this:
-            </Typography>{" "}
-            <br />
-            <br />
-            <br />
-              <Typography
-                sx={{ mr: 3, fontFamily: "monospace", fontSize: "14px" }}
-              >
-                1. Accessibility Web applications are accessible from any device
-                with an internet connection and a browser, allowing users to
-                access them on desktops, tablets, or mobile devices. They
-                eliminate the need for platform-specific versions, making them
-                platform-agnostic and accessible across various operating
-                systems (Windows, macOS, Linux, etc.).
-              </Typography>{" "}
-              <br />
-            <br />
-            <br />
-            <Typography sx={{ fontFamily: "monospace", fontSize: "14px" }}>
-              2. No Installation Required Users don’t need to download or
-              install web applications; they simply open a browser and start
-              using them. This reduces the burden on device storage and
-              simplifies the user experience.
-            </Typography>{" "}
-            <br />
-            <br />
-            <Typography sx={{ fontFamily: "monospace", fontSize: "14px" }}>
-              3. Easy Maintenance and Updates Updates and bug fixes can be
-              applied centrally on the server, ensuring all users get the latest
-              version without needing individual downloads or installations.
-              This centralized control allows for rapid deployment and better
-              security, as vulnerabilities can be addressed quickly.
-            </Typography>{" "}
-            <br />
-            <br />
-            <Typography sx={{ fontFamily: "monospace", fontSize: "14px" }}>
-              4. Cross-Platform Compatibility Most modern web applications work
-              seamlessly across various devices and screen sizes, thanks to
-              responsive design and browser compatibility. This
-              cross-compatibility reduces the need to develop separate
-              applications for different platforms (e.g., Android and iOS).
-            </Typography>{" "}
-            <br />
-            <br />
-            <Typography sx={{ fontFamily: "monospace", fontSize: "14px" }}>
-              5. Scalability Web applications can be easily scaled to handle
-              increasing user demand by upgrading server infrastructure or using
-              cloud services. This flexibility allows businesses to grow their
-              user base without having to redesign or rebuild their application.
-            </Typography>{" "}
-            <br />
-            <br />
-            <Typography sx={{ fontFamily: "monospace", fontSize: "14px" }}>
-              6. Data Security and Backup Data in web applications is typically
-              stored on remote servers or cloud services, reducing the risk of
-              data loss from device issues. Centralized storage allows for
-              regular backups and enhanced security measures, ensuring data
-              integrity and availability.
-            </Typography>{" "}
-            <br />
-            <br />
-            <Typography sx={{ fontFamily: "monospace", fontSize: "14px" }}>
-              7. Cost Efficiency Web applications reduce costs associated with
-              platform-specific development, maintenance, and distribution.
-              Since they’re hosted on a server, there’s typically no need for
-              expensive distribution channels, like app stores.
-            </Typography>{" "}
-            <br />
-            <br />
-            <Typography sx={{ fontFamily: "monospace", fontSize: "14px" }}>
-              8. Enhanced Collaboration and Real-Time Communication Web
-              applications can be easily designed to support collaborative
-              features, allowing multiple users to work on the same data
-              simultaneously. Real-time updates ensure that users see the latest
-              changes, which is especially useful for applications like project
-              management tools, file-sharing platforms, and team communication
-              software.
-            </Typography>{" "}
-            <br />
-            <br />
-            <Typography sx={{ fontFamily: "monospace", fontSize: "14px" }}>
-              9. Increased Reach Since web applications can be accessed
-              globally, businesses can reach a larger audience. This global
-              accessibility is ideal for businesses looking to expand their
-              presence without geographical constraints.
-            </Typography>{" "}
-            <br />
-            <br />
-            <Typography sx={{ fontFamily: "monospace", fontSize: "14px" }}>
-              10. Analytics and Personalization Web applications can integrate
-              with analytics tools to track user behavior, helping businesses
-              understand user preferences and make data-driven decisions. This
-              data can also be used to personalize user experiences, increasing
-              engagement and satisfaction.
-            </Typography>{" "}
-            <br />
-            <br />
-            <Typography sx={{ fontFamily: "monospace", fontSize: "14px" }}>
-              11. Reduced Hardware Requirements Users can run web applications
-              with minimal hardware requirements because most processing is done
-              on the server. This reduces the need for powerful devices,
-              allowing users to access the application even on lower-spec
-              devices.
-            </Typography>{" "}
-            <br />
-          </CardContent>
-        </CardActionArea>
-        <CardActions>
-        </CardActions>
-      </Card>
-    </Box>
+    <Container>
+      <Grid2 mt={2}>
+        <Typography variant="h4">About Me</Typography> <br />
+        <Divider />
+        <Typography mt={2} ml={4}>
+          Hello! I’m Sakiasi Baleiwai, a dedicated and passionate web developer
+          with a strong foundation in building and optimizing interactive,
+          user-focused websites and applications. With a background in both
+          frontend and backend technologies, I bring a balanced approach to each
+          project, ensuring the visual appeal and functionality work together to
+          create an exceptional user experience.
+        </Typography>{" "}
+        <br />
+        <Typography mt={2} ml={4} variant="h6">
+          My Journey
+        </Typography>
+        <Typography mt={2} ml={6}>
+          I began my career in web development with a curiosity for how websites
+          function and a love for problem-solving. Over the years, I've
+          developed a diverse skill set that allows me to adapt to different
+          challenges, from creating seamless user interfaces to developing
+          robust server-side functionalities. With hands-on experience in
+          technologies like [React, Node.js, MySQL, or other relevant tools],
+          I've had the opportunity to work on projects ranging from simple
+          websites to complex applications that solve real-world problems.
+        </Typography>
+        <Typography mt={2} ml={4} variant="h6">
+          My Approach
+        </Typography>
+        <Typography mt={2} ml={6}>
+          I believe that every project is unique and should reflect the brand or
+          purpose behind it. That's why I approach each project with a fresh
+          perspective, focusing on understanding the target audience and the
+          goals of the site or application. I work closely with clients and team
+          members to ensure that each project not only looks great but also
+          performs smoothly and meets accessibility and responsiveness
+          standards.
+        </Typography>
+        <Typography mt={2} ml={4} variant="h6">
+          Areas of Expertise
+        </Typography>
+        <List sx={{ listStyle: "inherit" }}>
+          <List sx={{ ml: 8, display: "list-item" }}>
+            Frontend Development: Proficient in HTML, CSS, JavaScript, and
+            frameworks like [React, Vue.js, or other frameworks you use],
+            creating engaging and intuitive user interfaces.
+          </List>
+          <List sx={{ ml: 8, display: "list-item" }}>
+            Backend Development: Skilled in [Node.js, Express, MySQL, or your
+            backend stack] for building and maintaining efficient databases,
+            APIs, and server-side applications.
+          </List>
+          <List sx={{ ml: 8, display: "list-item" }}>
+            Responsive Design: Ensuring all sites and applications are
+            mobile-friendly and accessible across various devices.
+          </List>
+          <List sx={{ ml: 8, display: "list-item" }}>
+            Project Management: Familiar with agile methodologies and capable of
+            managing projects from concept to completion, prioritizing clear
+            communication and organization.
+          </List>
+        </List>
+        <Typography mt={2} ml={4} variant="h6">
+          What I’m Working On
+        </Typography>
+        <Typography mt={2} ml={6}>
+          Currently, I’m building a personal portfolio site, and im looking to
+          contributing to an open-source project, and working on a new web
+          application. This projects has allowed me to dive deeper into
+          specialized technologies and skills. I’m excited to see where it
+          leads!.
+        </Typography>
+        <Typography mt={2} ml={4} variant="h6">
+          Let’s Connect
+        </Typography>
+        <Typography mt={2} ml={6}>
+          If you’re interested in collaborating, have a project in mind, or just
+          want to say hi, feel free to reach out. I’m always open to new
+          opportunities and love connecting with people who are passionate about
+          web development and technology. Thank you for stopping by my page, and
+          I look forward to connecting with you!
+        </Typography>
+      </Grid2>
+    </Container>
   );
 }
+
+export default About
