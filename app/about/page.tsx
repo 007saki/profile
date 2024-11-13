@@ -17,7 +17,7 @@ import React from 'react';
 const About = () => {
   return (
     <Container maxWidth="md">
-      <Card sx={{ p: 4, mt: 4, borderRadius: 3, boxShadow: 3 }}>
+      <Box sx={{ p: 4, mt: 4,}}>
         <Box display="flex" flexDirection="column" alignItems="center" mb={3}>
           <Avatar src='sakiasi.JPG' sx={{ width: 100, height: 100, mb: 2 }}>SB</Avatar>
           <Typography variant="h4" color="primary">
@@ -34,7 +34,7 @@ const About = () => {
             <Typography  alignItems={'center'} display={'flex'} variant="h6" color="secondary" gutterBottom>
               <Person sx={{mr:2}} /> About Me
             </Typography>
-            <Typography paragraph>
+            <Typography>
               Hello! I am Sakiasi Baleiwai, a dedicated web developer with a
               strong foundation in building and optimizing interactive,
               user-focused websites and applications. I bring a balanced
@@ -47,7 +47,7 @@ const About = () => {
             <Typography display={'flex'} alignItems={'center'} variant="h6" color="secondary" gutterBottom>
               <Work sx={{mr:2}} /> My Journey
             </Typography>
-            <Typography paragraph>
+            <Typography>
               I began my career in web development with a curiosity about how
               websites function and a love for problem-solving. Over the years,
               I’ve adapted to different challenges and gained experience in
@@ -60,7 +60,7 @@ const About = () => {
             <Typography variant="h6" color="secondary" gutterBottom>
               My Approach
             </Typography>
-            <Typography paragraph>
+            <Typography>
               Each project is unique and should reflect its brand or purpose. I
               approach each project with a fresh perspective, understanding the
               target audience and goals, ensuring accessibility and responsive
@@ -117,7 +117,7 @@ const About = () => {
             <Typography variant="h6" color="secondary" gutterBottom>
               What I’m Working On
             </Typography>
-            <Typography paragraph>
+            <Typography>
               I’m currently building a personal portfolio site, contributing to
               an open-source project, and working on a new web application.
               These projects help me explore specialized technologies and
@@ -129,7 +129,7 @@ const About = () => {
             <Typography display={'flex'} alignItems={'center'} variant="h6" color="secondary" gutterBottom>
               <ConnectWithoutContact sx={{mr:2}} /> Let’s Connect
             </Typography>
-            <Typography paragraph>
+            <Typography>
               If you’re interested in collaborating, have a project in mind, or
               just want to say hi, feel free to reach out. I’m always open to
               new opportunities and love connecting with others passionate about
@@ -137,7 +137,7 @@ const About = () => {
             </Typography>
           </Grid>
         </Grid>
-      </Card>
+      </Box>
     </Container>
   );
 };
