@@ -118,7 +118,7 @@ function ResponsiveAppBar() {
               <Link key={page} href={`/${page.trim().toLowerCase()}`}>
                 <Button
                   onClick={handleCloseNavMenu}
-                  sx={{ my: 2, color: "white", display: "block" }}
+                  sx={{ my: 1, color: "white", display: "block" }}
                 >
                   {page.trim()}
                 </Button>
@@ -132,7 +132,7 @@ function ResponsiveAppBar() {
               </IconButton>
             </Tooltip>
             <Menu
-              sx={{ mt: "45px" }}
+              sx={{ mt: "40px", }}
               id="menu-appbar"
               anchorEl={anchorElUser}
               anchorOrigin={{
