@@ -1,7 +1,6 @@
 import {
   Avatar,
   Box,
-  Card,
   Container,
   Divider,
   Grid,
@@ -11,7 +10,7 @@ import {
   ListItemText,
   Typography
 } from '@mui/material';
-import { Email, Code, Person, Work, ConnectWithoutContact } from '@mui/icons-material';
+import { Code, Person, Work, ConnectWithoutContact } from '@mui/icons-material';
 import React from 'react';
 
 const About = () => {
