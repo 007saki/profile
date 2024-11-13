@@ -1,7 +1,7 @@
 
 
 
-import { Container, Divider, Grid2, List, ListItem, Typography } from '@mui/material'
+import { Container, Divider, Grid2, List, Typography } from '@mui/material'
 import React from 'react'
 
 const About = () => {
@@ -11,7 +11,7 @@ const About = () => {
         <Typography variant="h4">About Me</Typography> <br />
         <Divider />
         <Typography mt={2} ml={4}>
-          Hello! I’m Sakiasi Baleiwai, a dedicated and passionate web developer
+          Hello! I am Sakiasi Baleiwai, a dedicated and passionate web developer
           with a strong foundation in building and optimizing interactive,
           user-focused websites and applications. With a background in both
           frontend and backend technologies, I bring a balanced approach to each
@@ -24,12 +24,12 @@ const About = () => {
         </Typography>
         <Typography mt={2} ml={6}>
           I began my career in web development with a curiosity for how websites
-          function and a love for problem-solving. Over the years, I've
+          function and a love for problem-solving. Over the years, I have
           developed a diverse skill set that allows me to adapt to different
           challenges, from creating seamless user interfaces to developing
           robust server-side functionalities. With hands-on experience in
           technologies like [React, Node.js, MySQL, or other relevant tools],
-          I've had the opportunity to work on projects ranging from simple
+          I have had the opportunity to work on projects ranging from simple
           websites to complex applications that solve real-world problems.
         </Typography>
         <Typography mt={2} ml={4} variant="h6">
@@ -37,7 +37,7 @@ const About = () => {
         </Typography>
         <Typography mt={2} ml={6}>
           I believe that every project is unique and should reflect the brand or
-          purpose behind it. That's why I approach each project with a fresh
+          purpose behind it. That is why I approach each project with a fresh
           perspective, focusing on understanding the target audience and the
           goals of the site or application. I work closely with clients and team
           members to ensure that each project not only looks great but also
@@ -83,7 +83,7 @@ const About = () => {
         </Typography>
         <Typography mt={2} ml={6}>
           If you’re interested in collaborating, have a project in mind, or just
-          want to say hi, feel free to reach out. I’m always open to new
+          want to say hi, feel free to reach out. I am always open to new
           opportunities and love connecting with people who are passionate about
           web development and technology. Thank you for stopping by my page, and
           I look forward to connecting with you!
