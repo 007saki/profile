@@ -1,86 +1,48 @@
-import { AccountCircle, Email as EmailIcon, Send as SendIcon, Clear as ClearIcon } from '@mui/icons-material';
-import { Box, Button, ButtonGroup, Container, Divider, InputAdornment, Stack, TextField, Typography } from '@mui/material';
+import { Box, Container, Typography } from '@mui/material';
 import React from 'react';
 
 const Contact = () => {
   return (
-    <Container maxWidth="sm" sx={{ py: 6 }}>
-      <Box sx={{ textAlign: 'center', mb: 4 }}>
-        <Typography color='primary' variant="h4">
+    <Container maxWidth="lg">
+      <Box
+        height="100vh"
+        display="flex"
+        flexDirection="column"
+        justifyContent="center"
+        alignItems="center"
+        textAlign="center"
+        sx={{
+          bgcolor: '#f9f9f9', // Light background for a subtle contrast
+          padding: 3,
+          borderRadius: 2,
+          boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)',
+        }}
+      >
+        <Typography variant="h4" gutterBottom sx={{ fontWeight: 'bold' }}>
           Contact Me
         </Typography>
-        <Divider sx={{ my: 2, mx: 'auto', width: '50%' }} />
-      </Box>
-      
-      <Stack spacing={3}>
-        <TextField
-          fullWidth
-          label="Full Name"
-          variant="outlined"
-          InputProps={{
-            startAdornment: (
-              <InputAdornment position="start">
-                <AccountCircle color="primary" />
-              </InputAdornment>
-            ),
-          }}
+        <Typography variant="body1" sx={{ marginBottom: 2, color: 'text.secondary' }}>
+          I would love to hear from you! Feel free to reach out by clicking the email below:
+        </Typography>
+        <Typography
+          variant="body1"
           sx={{
-            '& .MuiOutlinedInput-root': {
-              '& fieldset': {
-                borderColor: 'primary.main',
-              },
-            },
+            fontSize: '1.2rem',
+            fontWeight: 'medium',
+            color: 'primary.main',
           }}
-        />
-
-        <TextField
-          fullWidth
-          label="Email"
-          variant="outlined"
-          type="email"
-          InputProps={{
-            startAdornment: (
-              <InputAdornment position="start">
-                <EmailIcon color="primary" />
-              </InputAdornment>
-            ),
-          }}
-          sx={{
-            '& .MuiOutlinedInput-root': {
-              '& fieldset': {
-                borderColor: 'primary.main',
-              },
-            },
-          }}
-        />
-
-        <TextField
-          label="Message"
-          variant="outlined"
-          multiline
-          rows={4}
-          sx={{
-            '& .MuiOutlinedInput-root': {
-              '& fieldset': {
-                borderColor: 'primary.main',
-              },
-            },
-          }}
-        />
-
-        <ButtonGroup
-          fullWidth
-          variant="contained"
-          sx={{ display: 'flex', justifyContent: 'space-between', mt: 4 }}
         >
-          <Button startIcon={<SendIcon />} color="primary">
-            Send
-          </Button>
-          <Button startIcon={<ClearIcon />} color="secondary">
-            Clear
-          </Button>
-        </ButtonGroup>
-      </Stack>
+          <a
+            href="mailto:saki.baleiwai.komai@gmail.com"
+            style={{
+              textDecoration: 'none',
+              color: 'inherit',
+            }}
+          >
+            saki.baleiwai.komai@gmail.com
+          </a>
+        </Typography>
+      </Box>
     </Container>
   );
 };
