@@ -22,7 +22,7 @@ const Contact = () => {
           Contact Me
         </Typography>
         <Typography variant="body1" sx={{ marginBottom: 2, color: 'text.secondary' }}>
-          I would love to hear from you! Feel free to reach out by clicking the email below:
+          I would love to hear from you! Feel free to send me your emails.
         </Typography>
         <Typography
           variant="body1"
