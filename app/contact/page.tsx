@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { Box, Container, Typography } from '@mui/material';
 import React from 'react';
 
@@ -48,3 +49,18 @@ const Contact = () => {
 };
 
 export default Contact;
+=======
+
+
+
+
+import React from 'react'
+
+const Contact = () => {
+  return (
+    <div>Contact</div>
+  )
+}
+
+export default Contact
+>>>>>>> d7d87378e6dd09ecbf66ca5658dad6c6ec43a6e2

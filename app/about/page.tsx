@@ -10,28 +10,37 @@ import {
   ListItemText,
   Typography
 } from '@mui/material';
-import { Code, Person, Work, ConnectWithoutContact } from '@mui/icons-material';
+import { Code, Person, Work, ConnectWithoutContact, OpenInNew } from '@mui/icons-material';
 import React from 'react';
+import Link from 'next/link';
 
 const About = () => {
   return (
     <Container maxWidth="md">
-      <Box sx={{ p: 4, mt: 4,}}>
+      <Box sx={{ p: 4, mt: 4 }}>
         <Box display="flex" flexDirection="column" alignItems="center" mb={3}>
-          <Avatar src='sakiasi.JPG' sx={{ width: 100, height: 100, mb: 2 }}>SB</Avatar>
+          <Avatar src="sakiasi.JPG" sx={{ width: 100, height: 100, mb: 2 }}>
+            SB
+          </Avatar>
           <Typography variant="h4" color="primary">
             Sakiasi Baleiwai
           </Typography>
           <Typography variant="subtitle1" color="text.secondary" gutterBottom>
             Passionate Web Developer
           </Typography>
-          <Divider sx={{ width: '100%', mb: 3 }} />
+          <Divider sx={{ width: "100%", mb: 3 }} />
         </Box>
 
         <Grid container spacing={2}>
           <Grid item xs={12}>
-            <Typography  alignItems={'center'} display={'flex'} variant="h6" color="secondary" gutterBottom>
-              <Person sx={{mr:2}} /> About Me
+            <Typography
+              alignItems={"center"}
+              display={"flex"}
+              variant="h6"
+              color="secondary"
+              gutterBottom
+            >
+              <Person sx={{ mr: 2 }} /> About Me
             </Typography>
             <Typography>
               Hello! I am Sakiasi Baleiwai, a dedicated web developer with a
@@ -43,8 +52,14 @@ const About = () => {
           </Grid>
 
           <Grid item xs={12}>
-            <Typography display={'flex'} alignItems={'center'} variant="h6" color="secondary" gutterBottom>
-              <Work sx={{mr:2}} /> My Journey
+            <Typography
+              display={"flex"}
+              alignItems={"center"}
+              variant="h6"
+              color="secondary"
+              gutterBottom
+            >
+              <Work sx={{ mr: 2 }} /> My Journey
             </Typography>
             <Typography>
               I began my career in web development with a curiosity about how
@@ -69,8 +84,14 @@ const About = () => {
           </Grid>
 
           <Grid item xs={12}>
-            <Typography display={'flex'} alignItems={'center'} variant="h6" color="secondary" gutterBottom>
-              <Code sx={{mr:2}} /> Areas of Expertise
+            <Typography
+              display={"flex"}
+              alignItems={"center"}
+              variant="h6"
+              color="secondary"
+              gutterBottom
+            >
+              <Code sx={{ mr: 2 }} /> Areas of Expertise
             </Typography>
             <List>
               <ListItem>
@@ -125,14 +146,25 @@ const About = () => {
           </Grid>
 
           <Grid item xs={12}>
-            <Typography display={'flex'} alignItems={'center'} variant="h6" color="secondary" gutterBottom>
-              <ConnectWithoutContact sx={{mr:2}} /> Let’s Connect
+            <Typography
+              display={"flex"}
+              alignItems={"center"}
+              variant="h6"
+              color="secondary"
+              gutterBottom
+            >
+              <ConnectWithoutContact sx={{ mr: 2 }} /> Let’s Connect
             </Typography>
             <Typography>
               If you’re interested in collaborating, have a project in mind, or
-              just want to say hi, feel free to reach out. I’m always open to
-              new opportunities and love connecting with others passionate about
-              web development!
+              just want to say hi, feel free to{" "}
+              {
+                <Typography component={Link} href={"/contact"} color="primary">
+                  reach out <OpenInNew fontSize='small'/>
+                </Typography>
+              }
+              . I’m always open to new opportunities and love connecting with
+              others passionate about web development!
             </Typography>
           </Grid>
         </Grid>
