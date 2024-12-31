@@ -12,13 +12,8 @@
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
     "@mui/icons-material": "^6.1.6",
-<<<<<<< HEAD
     "@mui/material": "^6.3.0",
     "mysql2": "^3.12.0",
-=======
-    "@mui/material": "^6.1.6",
-    "mysql2": "^3.11.5",
->>>>>>> d7d87378e6dd09ecbf66ca5658dad6c6ec43a6e2
     "next": "15.0.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
