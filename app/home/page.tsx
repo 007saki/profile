@@ -30,7 +30,7 @@ const PortfolioHome = () => {
           </Grid2>
           <Grid2 padding={5} height={'90vh'} display={'flex'} alignItems={'center'} justifyContent={'center'} p={1} size={{xs:12,sm:12,md:6}} >
             <Grid2 component={Paper} elevation={5}>
-              <img height={400} src="/sakiasi.JPG" alt="sakiasi" />
+              <img height={300} src="/sakiasi.JPG" alt="sakiasi" />
             </Grid2>
         </Grid2>
       </Grid2>
