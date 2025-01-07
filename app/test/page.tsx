@@ -4,7 +4,6 @@
 
 
 import React from 'react'
-import TestModal from './modal'
 
 const Home = () => {
   return (
