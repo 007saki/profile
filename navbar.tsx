@@ -1,3 +1,5 @@
+
+
 'use client'
 import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
@@ -15,8 +17,7 @@ import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import Link from 'next/link';
 
-
-const pages = [ 'Contact', 'Terms of Use', 'About' ];
+const pages = [ 'Home', 'Contact', 'Terms of Use', 'About',  ];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function ResponsiveAppBar() {
@@ -87,9 +88,15 @@ function ResponsiveAppBar() {
               onClose={handleCloseNavMenu}
               sx={{ display: { xs: "block", md: "none" } }}
             >
-              {pages.map((page) => (
-                <Link key={page} href={`/${page.toLowerCase()}`}>
-                  <MenuItem onClick={handleCloseNavMenu}>{page}</MenuItem>
+              {pages.map((key,value) => (
+                <Link key={value}
+                href={
+                  key==='Home'?'/':
+                  key==='Contact'?'/contact' :
+                  key==='Terms of Use'?'/tou':
+                  key==='About'?'/about':''
+                }>
+                  <MenuItem onClick={handleCloseNavMenu}>{key}</MenuItem>
                 </Link>
               ))}
             </Menu>
@@ -115,7 +122,13 @@ function ResponsiveAppBar() {
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
-              <Link key={page} href={`/${page.trim().toLowerCase()}`}>
+              <Link key={page} 
+              href={
+                page==='Home'?'/':
+                page==='About'?'/about':
+                page==='Terms of Use'?'/tou':
+                page==='Contact'?'/contact':''
+              }>
                 <Button
                   onClick={handleCloseNavMenu}
                   sx={{ my: 1, color: "white", display: "block" }}
@@ -161,4 +174,5 @@ function ResponsiveAppBar() {
     </AppBar>
   );
 }
+
 export default ResponsiveAppBar;

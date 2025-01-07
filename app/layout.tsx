@@ -4,17 +4,6 @@ import "./globals.css";
 import ResponsiveAppBar from "@/navbar";
 import { Box } from "@mui/material";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
-
 export const metadata: Metadata = {
   title: "Portfolio",
   description: "This is a portfolio website",
@@ -27,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body>
         <ResponsiveAppBar />
         <Box sx={{overflowY:'auto', height:'90vh'}}>{children}</Box>
       </body>
