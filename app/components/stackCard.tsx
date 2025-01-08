@@ -22,10 +22,10 @@ const experience = [
 
 export const StackCard1:React.FC = () => {
     const capitalize = experience.map(data => {return data.charAt(0).toUpperCase() + data.slice(1)})
-    
+
   return (
     <Grid2>
-        <Grid2 bgcolor={'lightgreen'} component={Paper} elevation={2} p={2}>
+        <Grid2 height={600} bgcolor={'lightgreen'} component={Paper} elevation={2} p={2}>
             <Typography textAlign={'center'} variant="body1" sx={{fontFamily:"'Courier New',monospace",color:'#333', }}>Hands-on Experience</Typography>
             <Typography textAlign={'center'} variant="h4" color="inherit" fontFamily={'fantasy'}>8 Years in </Typography>
             <Divider/>

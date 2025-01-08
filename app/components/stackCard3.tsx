@@ -17,7 +17,7 @@ export const StackCard3:React.FC = () => {
     const capitalize = hardSkills.map(data => {return data.charAt(0).toUpperCase() + data.slice(1)})
   return (
     <Grid2 >
-        <Grid2 bgcolor={'lightskyblue'} component={Paper} elevation={2} p={2}>
+        <Grid2 height={600} bgcolor={'lightskyblue'} component={Paper} elevation={2} p={2}>
             <Typography textAlign={'center'} variant="body1" sx={{fontFamily:"'Courier New',monospace",color:'#333', }}>Qualification</Typography>
             <Typography textAlign={'center'} variant="h4" color="inherit" fontFamily={'fantasy'}>Certification</Typography>
             <Divider/>

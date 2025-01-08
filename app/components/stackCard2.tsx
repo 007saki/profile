@@ -25,10 +25,10 @@ const hardSkills = [
 
 export const StackCard2:React.FC = () => {
     const capitalize = hardSkills.map(data => {return data.charAt(0).toUpperCase() + data.slice(1)})
-    
+
   return (
     <Grid2>
-        <Grid2 bgcolor={'lightpink'} component={Paper} elevation={2} p={2}>
+        <Grid2 height={600} bgcolor={'lightpink'} component={Paper} elevation={2} p={2}>
             <Typography noWrap textAlign={'center'} variant="body1" sx={{fontFamily:"'Courier New',monospace",color:'#333', }}>Skills</Typography>
             <Typography noWrap textAlign={'center'} variant="h4" color="inherit" fontFamily={'fantasy'}>Hard Skills</Typography>
             <Divider/>
