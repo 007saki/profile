@@ -1,7 +1,7 @@
 
 
 import { AppRegistration, Engineering, School } from '@mui/icons-material'
-import { Button, Grid2,  Typography, ButtonGroup, Stack, Paper, Grid } from '@mui/material'
+import { Button, Grid2,  Typography, ButtonGroup, Stack, Paper } from '@mui/material'
 import React from 'react'
 import TxtTyping from '../components/textTyping'
 import StackCard1 from '../components/stackCard'
