@@ -1,15 +1,16 @@
 
 
 
-import React from 'react'
-import PortfolioHome from './home/page'
 
-const Home = () => {
+
+
+
+import React from 'react'
+
+const HelloWorld = () => {
   return (
-    <div>
-      <PortfolioHome/>
-    </div>
+    <div>HelloWorld</div>
   )
 }
 
-export default Home
+export default HelloWorld
